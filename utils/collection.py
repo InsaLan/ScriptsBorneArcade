@@ -13,7 +13,7 @@ def make_collection():
     nom_collection = prompt_str("Nom de la collection: ")
     genre = prompt_str("Genre à prendre en compte: ")
     
-    retcode = os.system("gamelist_creator.sh -c {} -g {}".format(nom_collection, genre))
+    retcode = os.system("./utils/gamelist_creator.sh -c {} -g {}".format(nom_collection, genre))
     if(retcode==0):
         print("\nNormallement, tout va bien !!!\n")
     else:
