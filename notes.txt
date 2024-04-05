@@ -1,0 +1,12 @@
+disques de 500gb mounted sur /media/insalan/BorneInsalan
+
+Pour mapper un controller via Low-Level (SDL2) : gamepad configurator
+Puis copier le texte mapping et le mettre sur une nouvelle ligne dans /home/insalan/ES-DE/controller/es_controller_mappings.cfg
+
+Mapping manuel sur retroarch
+
+Pour steam, copiez le shortcut dans ROMS/steam
+
+pas mal de tweaks dans Just Perfect (trouvées dans l'app Extensions puis paramètres de just perfect)
+
+modification du script pour gérer les collections=> mettre sur git tout ça

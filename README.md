@@ -11,6 +11,7 @@ Todo:
 ### Création de collections
 #### Créer/Mettre à jour une collection
 ##### reprendre script mdr
+##### Liste genres
 #### Créer un thème pour une collection
 ##### plein de machin
 
