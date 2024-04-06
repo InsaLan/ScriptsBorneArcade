@@ -1,0 +1,23 @@
+<theme>
+   <variables>
+      <systemName>template</systemName>
+      <systemDescription>template</systemDescription>
+      <systemManufacturer>&#032;</systemManufacturer>
+      <systemReleaseYear>&#032;</systemReleaseYear>
+      <systemReleaseDate>&#032;</systemReleaseDate>
+      <systemReleaseDateFormated>&#032;</systemReleaseDateFormated>
+      <systemHardwareType>Genre de jeu</systemHardwareType>
+      <systemCoverSize>1-2</systemCoverSize>
+      <systemColor>CFA83E</systemColor>
+      <systemColorPalette1>FF0000</systemColorPalette1>
+      <systemColorPalette2>0000A0</systemColorPalette2>
+      <systemColorPalette3>FFE41B</systemColorPalette3>
+      <systemColorPalette4>23B14D</systemColorPalette4>
+   </variables>
+
+   <view name="system">
+      <text name="system-label">
+         <text>${systemHardwareType}</text>
+      </text>
+   </view>
+</theme>
