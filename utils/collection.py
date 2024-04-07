@@ -36,10 +36,12 @@ def copy_img(img_path):
     Screen().input('Appuyez sur entrée pour continuer')
 
 def make_theme():
-    nom_collection = prompt_str("Nom de la collection: ")
+    nom_collection = prompt_str("Nom de la collection: ").lower()
     description = prompt_str("Description à mettre (laisser vide si rien): ")
+    manufacturer = prompt_str("Constructeur à mettre (laisser vide si rien): ")
+    releaseYear = prompt_str("Année de sortie (laisser vide si rien): ")
     couleur = prompt_str("Couleur du thème en hex 6 char (voir google svp): ")
-
+ 
     xml_path = ESDE_theme_path + "_inc/systems/metadata-custom/{}.xml".format(nom_collection)
     img_path = ESDE_theme_path + "_inc/systems/images/{}.webp".format(nom_collection)
 
@@ -68,6 +70,8 @@ def make_theme():
 
     xml_root[0][0].text = nom_collection
     xml_root[0][1].text = description
+    xml_root[0][3].text = manufacturer
+    xml_root[0][4].text = releaseYear
     xml_root[0][8].text = couleur
 
     xml_tree.write(xml_path)
@@ -80,3 +84,4 @@ collec_make = FunctionItem("Créer/Mettre à jour une collection", make_collecti
 theme_make = FunctionItem("Créer/Mettre à jour un thème pour une collection", make_theme)
 
 collec_cmenu.append_item(collec_make)
+collec_cmenu.append_item(theme_make)
