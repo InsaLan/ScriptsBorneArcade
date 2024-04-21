@@ -10,3 +10,5 @@ Pour steam, copiez le shortcut dans ROMS/steam
 pas mal de tweaks dans Just Perfect (trouvées dans l'app Extensions puis paramètres de just perfect)
 
 modification du script pour gérer les collections=> mettre sur git tout ça
+
+Pour scrapper : other setting => show only form gamelist.xml
